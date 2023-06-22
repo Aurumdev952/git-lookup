@@ -14,8 +14,8 @@ const Repositories = ({ info, title }) => {
         data: data_repo,
 
     } = useQuery({
-        queryKey: [info+username],
-        queryFn: () => {return getData(url)}
+        queryKey: [info + username],
+        queryFn: () => { return getData(url) }
     })
     if (status === "loading") {
         return (<div className="loading">
@@ -28,8 +28,8 @@ const Repositories = ({ info, title }) => {
                 wrapperStyle={{}}
                 wrapperClass=""
                 visible={true}
-/>
-        <h1>Loading..</h1>
+            />
+            <h1>Loading..</h1>
         </div>)
     }
     if (status === "error") {
@@ -43,20 +43,20 @@ const Repositories = ({ info, title }) => {
         return (
             <div className="repos">
                 <div className="rep-title">
-                    <h1>{`${username} ${title}` }</h1>
+                    <h1>{`${username} ${title}`}</h1>
                 </div>
                 <div className="repos-wrapper">
-                {data_repo.map(( repo, index) => (
-                    <div key={index} className="repo-container">
-                    <Repo data={repo}/>
-                    </div>
-                ))}
-             
+                    {data_repo.map((repo, index) => (
+                        <div key={index} className="repo-container">
+                            <Repo data={repo} />
+                        </div>
+                    ))}
+
                 </div>
             </div>
         )
     }
-    
+
 }
 
 

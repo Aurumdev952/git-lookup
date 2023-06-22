@@ -1,7 +1,9 @@
-
 const ProfInfo = ({ data }) => {
-    return <p className="prof-info"><b>{ data.title }:</b> { data.value }</p>
-}
+  return (
+    <p className="prof-info">
+      <b>{data.title}:</b> {data.value}
+    </p>
+  );
+};
 
-
-export default ProfInfo
+export default ProfInfo;

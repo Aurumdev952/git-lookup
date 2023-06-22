@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@500&family=Open+Sans:wght@300&family=Roboto+Condensed&family=Sofia+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@500&family=Open+Sans:wght@300&family=Roboto+Condensed&family=Sofia+Sans&display=swap");
 
 :root {
   /* fonts */
-  --font-inter: 'Inter', sans-serif;
-  --font-kanit: 'Kanit', sans-serif;
-  --font-roboto: 'Roboto Condensed', sans-serif;
-  --font-sofia: 'Sofia Sans', sans-serif;
-  --font-open: 'Open Sans', sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-kanit: "Kanit", sans-serif;
+  --font-roboto: "Roboto Condensed", sans-serif;
+  --font-sofia: "Sofia Sans", sans-serif;
+  --font-open: "Open Sans", sans-serif;
 
   /* colors */
   --white: #ffffff;
@@ -19,9 +19,7 @@
   --grey-stong: #393939;
   --grey-text: #666e77;
   --pink: #fdb6a6;
-
 }
-
 
 * {
   padding: 0;
@@ -43,7 +41,7 @@ body {
   align-items: center;
   gap: 30px;
 }
-.home h1{
+.home h1 {
   font-size: 100px;
 }
 .home p {
@@ -126,20 +124,17 @@ aside {
   justify-content: flex-start;
   align-items: center;
   overflow-y: scroll;
-
 }
 .profile::-webkit-scrollbar {
   width: 3px;
   scroll-behavior: smooth;
 }
 
-
 .profile::-webkit-scrollbar-track {
   background-color: transparent;
   /* box-shadow: inset 0px 0px 14px -5px rgba(0,0,0,0.23); */
   /* box-shadow: inset 0px 0px 14px -5px rgba(0,0,0,0.23); */
 }
-
 
 .profile::-webkit-scrollbar-thumb {
   background-color: darkgrey;
@@ -152,7 +147,6 @@ aside {
   padding: 10px 20px;
   margin-bottom: 15px;
   border-bottom: 1px solid var(--grey-text);
-  
 }
 .profile h2 a {
   color: var(--grey-text);
@@ -163,7 +157,7 @@ aside {
   height: 180px;
   width: 180px;
   margin-bottom: 10px;
-} 
+}
 
 .prof {
   width: 100%;
@@ -180,7 +174,7 @@ aside {
   font-weight: 300;
 }
 .name::before {
-  content: 'name:';
+  content: "name:";
   position: absolute;
   top: -4px;
   font-size: 10px;
@@ -194,7 +188,7 @@ aside {
   font-weight: 100;
 }
 .uname::before {
-  content: 'username:';
+  content: "username:";
   position: absolute;
   top: -2px;
   font-size: 10px;
@@ -220,7 +214,7 @@ b {
   font-family: var(--font-sofia);
 }
 .bio::before {
-  content: 'bio:';
+  content: "bio:";
   position: absolute;
   top: -10px;
   font-size: 10px;
@@ -253,7 +247,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .search-form {
   display: flex;
@@ -305,7 +298,6 @@ main {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-
 }
 
 .tabs a p {
@@ -420,7 +412,6 @@ main {
 .repo-name {
   font-size: 25px;
   color: var(--blue);
-
 }
 
 .description-repo {
@@ -449,10 +440,10 @@ main {
   opacity: 1;
   pointer-events: auto;
   -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-     -o-transform: translateY(0px);
-      transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 .tooltip {
@@ -468,20 +459,19 @@ main {
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
   -ms-transform: translateY(10px);
-   -o-transform: translateY(10px);
-    transform: translateY(10px);
--webkit-transition: all .25s ease-out;
-  -moz-transition: all .25s ease-out;
-  -ms-transition: all .25s ease-out;
-   -o-transition: all .25s ease-out;
-    transition: all .25s ease-out;
--webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
   -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-   -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
 }
-
 
 .tooltip::before {
   bottom: -20px;
