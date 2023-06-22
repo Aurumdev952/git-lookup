@@ -2,7 +2,7 @@ import axios from "axios"
 
 
 
-const TOKEN = import.meta.env.VITE_TOKEN
+// const TOKEN = import.meta.env.VITE_TOKEN
 console.log(TOKEN);
 const config = {
     headers: {

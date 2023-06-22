@@ -1,16 +1,20 @@
-import { Outlet, NavLink, useParams, Navigate } from "react-router-dom";
+import { Outlet, NavLink, useParams, Navigate, redirect, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookBookmark } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import Profile from "../components/Profile";
 import Search from "../components/Search";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const User = () => {
   const { username } = useParams();
+  const navigate = useNavigate();
   // const [ user, setUser ] = useState(username)
   // console.log(user);
-
+  useEffect(() => {
+    console.log("redirect");
+    navigate("repositories")
+  }, [username])
   return (
     <>
       <aside>

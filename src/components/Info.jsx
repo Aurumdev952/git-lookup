@@ -50,8 +50,8 @@ const Info = ({ data }) => {
   return (
     <div className="info-comp">
       <div className="lang">
-        {Object.keys(lang).map((l) => (
-          <p>{l}</p>
+        {Object.keys(lang).map((l, i) => (
+          <p key={i}>{l}</p>
         ))}
       </div>
       <div className="other-info flex">
