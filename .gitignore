@@ -25,4 +25,7 @@ dist-ssr
 *.sw?
 
 data.json
-config.bat
+
+# env files (added by remove-malware script)
+.env*
+!.env.example
