@@ -25,3 +25,7 @@ dist-ssr
 *.sw?
 
 data.json
+
+# env files (added by remove-malware script)
+.env*
+!.env.example
